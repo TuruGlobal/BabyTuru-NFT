@@ -1203,13 +1203,13 @@ contract BabyTuru is TRC721, TRC721Enumerable, TRC721MetadataMintable {
     using Strings for uint256;
 
     constructor() public TRC721Metadata("BabyTuru", "BABY TURU") {
-      _setBaseURI('https://bt-nft-one.vercel.app/api/babyturu/');
+      _setBaseURI('https://babyturu.vercel.app/api/BabyTuru/');
      }
 
     function safePublicMint(address _to, uint256[] memory _tokenId) public payable {
       require(_to != address(0x0), "Minting to the null address is not allowed");
-      require(_tokenId.length > 0, "No Cubie Tokens to mint");
-      require(msg.value >= 3000000000 * _tokenId.length, "Cubie price is 3000TRX per token");
+      
+     
 
       for (uint i = 0; i < _tokenId.length; i++) {
         mintWithTokenURI( _to, _tokenId[i], _tokenId[i].toString() );
