@@ -2,7 +2,7 @@
 
 export default function handler(req, res) {
   res.status(200).json({
-    "name"  : "MC2 Syed",
-    "image" : "https://gateway.btfs.io/btfs/QmNScFfjqZpa53vdf2Brbie5CBWrjyjHm33ur1YogqAAbt"
+    "name"  : "MC2 Crypto Captive",
+    "image" : "https://gateway.btfs.io/btfs/QmbLGpX9xAchH4YCgZeHfyfVyS62YFa4VWE9Zqw7bwn4Qt"
   })
 }
